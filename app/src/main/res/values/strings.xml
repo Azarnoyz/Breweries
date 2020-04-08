@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Breweries</string>
+    <string name="no_data">Данные отсутствуют</string>
+    <string name="street">Street:</string>
+    <string name="city">City:</string>
+    <string name="state">State:</string>
+    <string name="country">Country:</string>
+    <string name="phone">Phone:</string>
+    <string name="website">Website:</string>
+    <string name="show_on_map">Show on map</string>
+    <string name="search">Search</string>
+    <string name="breweries">Breweries</string>
+
+</resources>

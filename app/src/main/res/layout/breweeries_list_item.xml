@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/list_item_shape"
+    android:layout_margin="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/title_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Almanac Beer Company"
+        style="@style/title_text_list_style" />
+
+    <LinearLayout
+        android:id="@+id/main_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_text">
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/street_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/list_street"
+                android:text="@string/street"
+                style="@style/hard_text_style" />
+
+            <TextView
+                android:id="@+id/street_text"
+                tools:text="651B W Tower Ave"
+                style="@style/list_text_style" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/city_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/list_city"
+                style="@style/hard_text_style"
+                android:text="@string/city" />
+
+            <TextView
+                android:id="@+id/city_text"
+                style="@style/list_text_style"
+                tools:text="Alameda" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/state_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/list_state"
+                style="@style/hard_text_style"
+                android:text="@string/state" />
+
+            <TextView
+                android:id="@+id/state_text"
+                style="@style/list_text_style"
+                tools:text="California" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/country_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/list_country"
+                style="@style/hard_text_style"
+                android:text="@string/country" />
+
+            <TextView
+                android:id="@+id/country_text"
+                style="@style/list_text_style"
+                tools:text="United States" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/phone_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/list_phone"
+                style="@style/hard_text_style"
+                android:text="@string/phone" />
+
+            <TextView
+                android:id="@+id/phone_text"
+                style="@style/list_text_style"
+                tools:text="4159326531" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/website_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/list_website"
+                style="@style/hard_text_style"
+                android:text="@string/website" />
+
+            <TextView
+                android:id="@+id/website_text"
+                style="@style/list_text_style"
+                tools:text="https://almanacbeer.com" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_map"
+        android:text="@string/show_on_map"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_ll"
+        style="@style/button_list_style" />
+</androidx.constraintlayout.widget.ConstraintLayout>
